@@ -86,3 +86,70 @@ ul {
     padding-top: 150px;
     padding-left: 68px;
 }
+
+.products {
+    background-color: #000000;
+    padding-top: 72px;
+    padding-left: 52px;
+    
+}
+
+
+
+.tailor_text {
+    color: white;
+    padding-bottom: 72px;
+}
+
+.products_text {
+    
+    font-size: 78px;
+}
+
+.approved {
+    padding-top: 44px;
+}
+
+.our_text {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    width: 550px;
+}
+
+.attribute {
+    padding-top: 168px;
+}
+
+.boots_text {
+    color: white;
+}
+
+.engagement {
+    padding-top: 40px;
+}
+
+.healtshcare {
+    color: white;
+    padding-top: 16px;
+    max-width: 450px;
+    padding-bottom: 32px;
+    
+}
+
+    
+.attribute {
+    display: flex;
+    gap: 34px;
+    padding-bottom: 40px;
+}
+
+.brand {
+    padding-top: 40px;
+}
+
+.connects_text {
+    color: white;
+    max-width: 450px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
