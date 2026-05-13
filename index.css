@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Inter;
+    src: url(inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
 body {
-    font-family: "Inter", "sans-serify";
+    font-family: "Inter";
     margin: 0;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -13,7 +18,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: "Fraunces", serif;
+    font-family: "Inter";
     font-weight: 400;
 }
 
@@ -86,7 +91,50 @@ ul {
     padding-left: 68px;
 }
 
+.awareness {
+    margin-top: 72px;
+    font-size: 32px;
+}
 
+.treatment_text {
+    color: #A573B9;
+}
+
+.image {
+    float: left;
+}
+
+.image-2 {
+    float: left;
+}
+
+.understanging_text {
+    padding-left: 20px;
+    color: #B84E88;
+}
+
+.awareness_text {
+    color: #F98A0C;
+}
+
+.understanging_container {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.prescription {
+    padding-top: 97px;
+    padding-left: 709px;
+    padding-bottom: 72px;
+}
+
+.prescription_text {
+    max-width: 350px;
+}
+
+.consumers {
+    max-width: 620px;
+}
 
 .products {
     background-color: #000000;
@@ -94,8 +142,6 @@ ul {
     
     
 }
-
-
 
 .tailor_text {
     color: white;
@@ -110,6 +156,8 @@ ul {
 .approved {
     padding-top: 44px;
 }
+
+.understanging_text {}
 
 .our_text {
     padding-top: 16px;
