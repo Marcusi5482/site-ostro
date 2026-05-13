@@ -1,10 +1,11 @@
-
 body {
     font-family: "Inter", "sans-serify";
     margin: 0;
     font-optical-sizing: auto;
     font-weight: 400;
 }
+
+
 
 p {
     margin: 0;
@@ -22,29 +23,27 @@ ul {
 }
 
 .container {
-    max-width: 1130px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.logo {
-    padding-top: 22px;
-    padding-left: 52px;
-    float: left;
+
+
+
+.ostro-demo {
+    display: flex;
+    margin-top: 22px;
+    gap: 751px;
 }
 
-.get_demo {
-    padding-top: 20px;
-    padding-left: 1216px;
-}
 
 .demo_class {
     padding-right: 12px;
 }
 
 .guiding {
-    padding-top: 28px;
-    padding-left: 53px;
+    margin-top: 28px;
 }
 
 .guiding_text {
@@ -69,7 +68,7 @@ ul {
 
 .today_container {
     padding-top: 42px;
-    padding-left: 54px;
+
     float: left;
 }
 
@@ -87,10 +86,12 @@ ul {
     padding-left: 68px;
 }
 
+
+
 .products {
     background-color: #000000;
     padding-top: 72px;
-    padding-left: 52px;
+    
     
 }
 
