@@ -241,3 +241,40 @@ ul {
     width: 165px;
     margin-bottom: 72px;
 }
+
+.demo {
+    
+    display: flex;
+    gap: 800px
+
+}
+
+.schedule {
+    background-color: #FFD260;
+}
+
+.footer {
+    background-color: black;
+}
+
+.product_text {
+    color: #FFFFFF;
+    padding-top: 52px;
+    display: flex;
+    gap: 188px;
+}
+
+.product_text_p {
+    padding-bottom: 12px;
+}
+
+.product {
+    display: flex;
+    gap: 116px;
+}
+
+.ostro_logo_2 {
+    margin-top: 257px;
+    margin-left: 998px;
+    margin-bottom: 37px;
+}
