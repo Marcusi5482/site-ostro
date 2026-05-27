@@ -1,16 +1,36 @@
+
 @font-face {
     font-family: Inter;
     src: url(inter/Inter-VariableFont_opsz\,wght.ttf);
 }
 
+:root {
+    --container: 1130px;
+    --gap: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     margin: 0;
     font-optical-sizing: auto;
     font-weight: 400;
+    color: #000;
+    overflow-x: hidden;
 }
 
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 p {
     margin: 0;
@@ -18,77 +38,122 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 400;
+    line-height: 1.1;
 }
 
 ul {
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .container {
-  max-width: 1130px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-
-
+.header .container,
+.guiding .container,
+.today .container,
+.treatment .container,
+.experienced .container,
+.mission .container,
+.schedule .container,
+.footer .container {
+    width: 100%;
+}
 
 .ostro-demo {
     display: flex;
-    margin-top: 22px;
-    gap: 751px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 22px;
 }
 
+.get_demo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 .demo_class {
-    padding-right: 12px;
+    padding-right: 0;
 }
 
 .guiding {
     margin-top: 28px;
 }
 
+.guiding .container,
+.today .container,
+.tailor,
+.attribute,
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--gap);
+}
+
 .guiding_text {
-    width: 600px;
-    font-size: 32px;
+    float: none;
+    width: auto;
+    max-width: 600px;
+}
+
+.guiding .consumers {
+    max-width: 600px;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.02;
 }
 
 .creates {
     padding-top: 32px;
     font-size: 20px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
+    line-height: 1.45;
 }
 
 .img_prducts {
     padding-top: 32px;
 }
 
-.guiding_text{
-    
-    float: left;
+.img_group {
+    max-width: 100%;
+    align-self: flex-end;
 }
 
 .today_container {
     padding-top: 42px;
-
-    float: left;
+    float: none;
+    max-width: 550px;
 }
 
 .today_text {
-    width: 530px;
+    width: 100%;
+    max-width: 530px;
+    font-size: clamp(30px, 3.3vw, 50px);
+    line-height: 1.08;
 }
 
 .but_text {
     padding-top: 32px;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
+    font-size: clamp(22px, 2.3vw, 34px);
+    line-height: 1.15;
 }
 
 .img_believe {
     padding-top: 150px;
-    padding-left: 68px;
+    padding-left: 0;
+    max-width: 100%;
+    align-self: flex-start;
 }
 
 .awareness {
@@ -96,16 +161,19 @@ ul {
     font-size: 32px;
 }
 
+.treatment .container {
+    align-items: flex-start;
+}
+
 .treatment_text {
     color: #A573B9;
+    font-size: clamp(34px, 4vw, 48px);
 }
 
-.image {
-    float: left;
-}
-
+.image,
 .image-2 {
     float: left;
+    margin-right: 12px;
 }
 
 .understanging_text {
@@ -124,52 +192,78 @@ ul {
 
 .prescription {
     padding-top: 97px;
-    padding-left: 709px;
+    padding-left: 0;
     padding-bottom: 72px;
+    max-width: 430px;
+    margin-left: auto;
 }
 
 .prescription_text {
     max-width: 350px;
+    font-size: clamp(30px, 3.4vw, 54px);
+    line-height: 1.05;
 }
 
 .consumers {
     max-width: 620px;
+    line-height: 1.25;
 }
 
 .products {
     background-color: #000000;
     padding-top: 72px;
-    
-    
+    padding-bottom: 40px;
 }
 
 .tailor_text {
     color: white;
     padding-bottom: 72px;
+    max-width: 520px;
 }
 
 .products_text {
-    
-    font-size: 78px;
+    font-size: clamp(44px, 6vw, 78px);
+    line-height: 1;
 }
 
 .approved {
     padding-top: 44px;
 }
 
-
 .our_text {
     padding-top: 16px;
     padding-bottom: 32px;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
+    line-height: 1.35;
+}
+
+.mobile {
+    width: min(100%, 560px);
+    align-self: center;
 }
 
 .attribute {
     padding-top: 168px;
+    padding-bottom: 40px;
+    align-items: flex-start;
+}
+
+.navigate,
+.connects {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.ostro-navigate,
+.laptop {
+    width: 100%;
+    max-width: 520px;
 }
 
 .boots_text {
     color: white;
+    font-size: clamp(28px, 3vw, 40px);
 }
 
 .engagement {
@@ -181,14 +275,7 @@ ul {
     padding-top: 16px;
     max-width: 450px;
     padding-bottom: 32px;
-    
-}
-
-    
-.attribute {
-    display: flex;
-    gap: 34px;
-    padding-bottom: 40px;
+    line-height: 1.35;
 }
 
 .brand {
@@ -200,16 +287,19 @@ ul {
     max-width: 450px;
     padding-top: 16px;
     padding-bottom: 32px;
+    line-height: 1.35;
 }
 
 .team {
-    width: 800px;
+    width: auto;
+    max-width: 800px;
     margin-top: 120px;
     margin-bottom: 72px;
-}   
+}
 
 .team_text_1 {
     padding-bottom: 32px;
+    font-size: clamp(34px, 4vw, 48px);
 }
 
 .meet {
@@ -219,34 +309,62 @@ ul {
 .meet_text_1 {
     color: #F98A0C;
     padding-bottom: 32px;
+    font-size: clamp(28px, 3vw, 40px);
 }
 
 .hims {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     padding-bottom: 25px;
 }
 
+.company_image {
+    width: calc(25% - 18px);
+    min-width: 180px;
+    flex: 1 1 180px;
+}
+
+.mission .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .mission_text_1 {
     margin-top: 72px;
-    margin-left: 1024px;
-
-    width: 400px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 400px;
     padding-bottom: 24px;
+    text-align: right;
+    font-size: clamp(30px, 3vw, 44px);
 }
 
 .mission_text_2 {
-    margin-left: 1024px;
+    margin-left: 0;
     color: #F98A0C;
-    width: 165px;
+    width: 100%;
+    max-width: 220px;
     margin-bottom: 72px;
+    text-align: right;
+    font-size: clamp(24px, 2.5vw, 34px);
+}
+
+.demo_color {
+    width: 100%;
 }
 
 .demo {
-    
     display: flex;
-    gap: 800px
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 52px 0;
+}
 
+.demo_text {
+    font-size: clamp(32px, 4vw, 56px);
 }
 
 .schedule {
@@ -257,9 +375,20 @@ ul {
     background-color: black;
 }
 
+.footer .container {
+    padding-top: 52px;
+    padding-bottom: 37px;
+}
+
+.product {
+    color: #FFFFFF;
+    gap: 40px;
+    align-items: flex-start;
+}
+
 .product_text {
     color: #FFFFFF;
-    padding-top: 52px;
+    padding-top: 0;
     display: flex;
     gap: 188px;
 }
@@ -268,13 +397,258 @@ ul {
     padding-bottom: 12px;
 }
 
-.product {
-    display: flex;
-    gap: 116px;
+.ostro_logo_2 {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-bottom: 0;
+    max-width: 220px;
 }
 
-.ostro_logo_2 {
-    margin-top: 257px;
-    margin-left: 998px;
-    margin-bottom: 37px;
+
+@media (max-width: 1200px) {
+    :root {
+        --gap: 28px;
+    }
+
+    .guiding .container,
+    .today .container,
+    .tailor,
+    .attribute,
+    .product {
+        gap: 28px;
+    }
+
+    .guiding .consumers {
+        font-size: clamp(38px, 4.6vw, 60px);
+    }
+
+    .today_text {
+        font-size: clamp(28px, 3vw, 42px);
+    }
+
+    .products_text {
+        font-size: clamp(40px, 5vw, 64px);
+    }
+
+    .company_image {
+        min-width: 150px;
+    }
+
+    .product_text {
+        gap: 120px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .ostro-demo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .guiding .container,
+    .today .container,
+    .treatment .container,
+    .tailor,
+    .attribute,
+    .product {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .guiding_text,
+    .today_container,
+    .tailor_text,
+    .prescription,
+    .team,
+    .mission_text_1,
+    .mission_text_2 {
+        max-width: 100%;
+    }
+
+    .guiding .consumers {
+        font-size: clamp(34px, 6vw, 48px);
+    }
+
+    .creates,
+    .today_text,
+    .but_text,
+    .prescription_text,
+    .healtshcare,
+    .connects_text,
+    .our_text {
+        max-width: 100%;
+    }
+
+    .img_group,
+    .img_believe {
+        align-self: center;
+        padding-top: 24px;
+    }
+
+    .prescription {
+        padding-top: 24px;
+        margin-left: 0;
+    }
+
+    .attribute {
+        padding-top: 72px;
+    }
+
+    .mobile,
+    .ostro-navigate,
+    .laptop {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .company_image {
+        width: calc(50% - 12px);
+        min-width: 0;
+        flex: 1 1 calc(50% - 12px);
+    }
+
+    .mission .container {
+        align-items: flex-start;
+    }
+
+    .mission_text_1,
+    .mission_text_2 {
+        text-align: left;
+    }
+
+    .demo {
+        padding: 32px 0;
+    }
+
+    .product_text {
+        gap: 64px;
+    }
+
+    .ostro_logo_2 {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .guiding {
+        margin-top: 20px;
+    }
+
+    .guiding .consumers {
+        font-size: clamp(30px, 9vw, 40px);
+    }
+
+    .creates {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+    .today_text {
+        font-size: clamp(24px, 7vw, 32px);
+    }
+
+    .but_text {
+        font-size: clamp(18px, 5.2vw, 22px);
+        padding-top: 20px;
+    }
+
+    .awareness {
+        margin-top: 44px;
+        font-size: 24px;
+    }
+
+    .treatment_text {
+        font-size: 28px;
+    }
+
+    .prescription_text {
+        font-size: 28px;
+    }
+
+    .products {
+        padding-top: 52px;
+    }
+
+    .tailor_text {
+        padding-bottom: 40px;
+    }
+
+    .approved {
+        padding-top: 28px;
+    }
+
+    .products_text {
+        font-size: 34px;
+    }
+
+    .attribute {
+        padding-top: 52px;
+    }
+
+    .hims {
+        gap: 16px;
+    }
+
+    .company_image {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .team {
+        margin-top: 72px;
+        margin-bottom: 52px;
+    }
+
+    .meet {
+        padding-bottom: 40px;
+    }
+
+    .mission_text_1 {
+        margin-top: 52px;
+        font-size: 24px;
+    }
+
+    .mission_text_2 {
+        margin-bottom: 52px;
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .demo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px 0;
+    }
+
+    .demo_text {
+        font-size: 28px;
+    }
+
+    .product_text {
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 0;
+    }
+
+    .product {
+        gap: 24px;
+    }
+
+    .ostro_logo_2 {
+        max-width: 180px;
+        margin-top: 28px;
+    }
+
+    .img_prducts {
+        width: 140px;
+    }
 }
