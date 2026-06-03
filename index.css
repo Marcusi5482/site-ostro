@@ -66,6 +66,11 @@ ul {
     width: 100%;
 }
 
+.logo:hover {
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .ostro-demo {
     display: flex;
     justify-content: space-between;
@@ -82,6 +87,16 @@ ul {
 
 .demo_class {
     padding-right: 0;
+}
+
+.demo_class:hover {
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.demo_cube:hover {
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .guiding {
@@ -117,10 +132,16 @@ ul {
     width: 100%;
     max-width: 450px;
     line-height: 1.45;
+    
 }
 
 .img_prducts {
-    padding-top: 32px;
+    margin-top: 32px;
+}
+
+.img_prducts:hover {
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .img_group {
@@ -238,10 +259,21 @@ ul {
     line-height: 1.35;
 }
 
+.our_button_3:hover {
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
 .mobile {
     width: min(100%, 560px);
     align-self: center;
 }
+
+.mobile:hover {
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
 
 .attribute {
     padding-top: 168px;
@@ -259,6 +291,16 @@ ul {
 .laptop {
     width: 100%;
     max-width: 520px;
+}
+
+.ostro-navigate:hover {
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
+.laptop:hover {
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
 
 .boots_text {
@@ -282,12 +324,22 @@ ul {
     padding-top: 40px;
 }
 
+.navigate_button_3:hover {
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
 .connects_text {
     color: white;
     max-width: 450px;
     padding-top: 16px;
     padding-bottom: 32px;
     line-height: 1.35;
+}
+
+.brand_button_3:hover {
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
 
 .team {
@@ -317,6 +369,11 @@ ul {
     flex-wrap: wrap;
     gap: 24px;
     padding-bottom: 25px;
+}
+
+.company_image:hover {
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .company_image {
@@ -394,7 +451,12 @@ ul {
 }
 
 .product_text_p {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.product_text_p:hover {
+    background-color: red;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
 
 .ostro_logo_2 {
@@ -404,6 +466,10 @@ ul {
     max-width: 220px;
 }
 
+.ostro_logo_2:hover {
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgb(255, 255, 255), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
 
 @media (max-width: 1200px) {
     :root {
