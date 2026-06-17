@@ -55,6 +55,30 @@ ul {
     padding: 0 20px;
 }
 
+.anim {
+    opacity: 0;
+}
+
+.anim.show {
+    animation: head 2s forwards;
+}
+
+@keyframes head {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    animation: head-anim forwards;
+}
+
+
 .header .container,
 .guiding .container,
 .today .container,
